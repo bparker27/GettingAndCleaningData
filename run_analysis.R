@@ -106,5 +106,5 @@ rm("excludeNames")
 
 #write tidy data to file
 write.table(x = tidyData, file = "tidyData.txt", row.names = FALSE)
-makeCodebook(tidyData, replace = TRUE)
+makeCodebook(tidyData, output = "pdf", replace = TRUE)
 rm("tidyData")
